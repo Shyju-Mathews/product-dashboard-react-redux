@@ -8,7 +8,7 @@ const Cart = () => {
   const cartProducts = useSelector((state) => state.cart);
   const disPatch = useDispatch()
 
-  console.log(cartProducts.length)
+  console.log(cartProducts)
 
   const removeFromCart = (id) => {
     disPatch(remove(id))
